@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,26 @@
 </head>
 
 <body>
-    
+
+    <h2 class="text-5xl text-center mb-5">Phone Hunting</h2>
+
+    <section id="search-section" class="mb-10">
+        <div class="text-center">
+            <input type="text" placeholder="Search..." id="search-field" class="input input-bordered w-full max-w-xs" />
+            <button id="search-btn" class="btn btn-accent">SEARCH</button>
+        </div>
+    </section>
+
+    <section id="spinnerContainer" class="text-center">
+        <span id="spinner" class="loading loading-spinner loading-lg hidden"></span>
+    </section>
+
+    <section id="phones-container" class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+    </section>
+    <div id="show-button-container" class="text-center">
+        <button id="show-button" class="btn btn-accent hidden mt-4">SHOW ALL</button>
+    </div>
 
     <script src="scripts/phone.js"></script>
 </body>
